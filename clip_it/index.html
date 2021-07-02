@@ -140,7 +140,7 @@
 
 <head>
 	<title>CLIP-It! Language-Guided Video Summarization</title>
-	<meta property="og:image" content="resources/approach.png" />
+	<meta property="og:image" content="resources/teaser.png" />
 	<!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 	<meta property="og:title" content="CLIP-It! Language-Guided Video Summarization" />
 	<meta property="og:description"
@@ -162,6 +162,7 @@
 	<br>
 	<center>
 		<span style="font-size:36px">CLIP-It! Language-Guided Video Summarization</span>
+		<br>
 		<table align=center width=600px>
 			<table align=center width=1100px>
 				<tr>
@@ -189,7 +190,7 @@
 				<tr>
 					<td align=center width=100px> <span style="font-size:15pt">
 							<center>
-								<a href="https://arxiv.org/pdf/2104.02687.pdf">[Paper]</a>
+								<a href="https://arxiv.org/pdf/2107.00650.pdf">[Paper]</a>
 
 							</center>
 					</td>
@@ -206,15 +207,33 @@
 		</table>
 	</center>
 
+	<br>
 	<center>
-		<p align="center">
-			<iframe width="760" height="480" src="https://www.youtube.com/embed/u0eaw5W1uu4" frameborder="0"
-				allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
-		</p>
+		<table align=center width=850px>
+			<tr>
+				<td align=center width=850px>
+					<center>
+						<img class="round" style="width:950px" align="middle" src="resources/teaser.png"/>
+					</center>
+				</td>
+			</tr>
+		</table>
+		<table align=center width=850px>
+			<tr>
+				<td>
+					We introduce <b>CLIP-It</b>, a <em>language-guided</em> multimodal transformer for generic and query-focused video
+					summarization. The figure shows results from our method. Given a day-long video of a national park tour, the
+					generic summary (top) is a video with relevant and diverse keyframes. When using the query “All the scenes
+					containing restaurants and shopping centers”, the generated query-focused summary includes all the matching
+					scenes. Similarly, the query “All water bodies such as lakes, rivers, and waterfalls”, yields a short summary
+					containing all the water bodies present in the video.
+				</td>
+			</tr>
+		</table>
 	</center>
 
 	<hr>
-
+	<center>
 	<table align=center width=850px>
 		<center>
 			<h1>Abstract</h1>
@@ -225,12 +244,47 @@
 			</td>
 		</tr>
 	</table>
+	</center>
 	<br>
 
-	<!-- <hr>
+	<hr>
 	<center>
-		<h1>More Qualitative Results</h1>
-	</center> -->
+	<table align=center width=850px>
+		<center>
+			<h1>Method</h1>
+			<tr>
+				<td align=center width=850px>
+					<center>
+						<img class="round" style="width:850px" align="middle" src="resources/method.png"/>
+					</center>
+				</td>
+			</tr>
+		</center>
+
+		<tr>
+			<td>
+				 <b>Overview of CLIP-It.</b> Given an input video, CLIP-It generates a summary conditioned on either a
+					user-defined natural language query or an automatically generated dense video caption. The Language-Guided
+					Attention head fuses the image and language embeddings and the Frame-Scoring Transformer jointly attends to
+					all frames to predict their relevance scores. During inference, the video summary is constructed by converting
+					frame scores to shot scores and using Knapsack algorithm to select high scoring shots. 
+			</td>
+		</tr>
+	</table>
+	</center>
+	<br>
+
+	<hr>
+	<table align=center width=850px>
+		<center>
+			<h1>Qualitative Results</h1>
+			<p align="center">
+				<iframe width="760" height="480" src="https://www.youtube.com/embed/u0eaw5W1uu4" frameborder="0"
+					allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+			</p>
+		</center>
+	</table>
+	<br>
 
 	<hr>
 
@@ -252,7 +306,7 @@
 		<tr>
 			<td><span style="font-size:14pt">
 					<center>
-						<a href="https://arxiv.org/pdf/2104.02687.pdf">[Paper]</a> |
+						<a href="https://arxiv.org/pdf/2107.00650.pdf">[Paper]</a> |
 						<a href="">[Bibtex]</a>
 					</center>
 			</td>
