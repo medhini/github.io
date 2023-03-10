@@ -142,7 +142,8 @@
 	<title>TL;DW? Summarizing Instructional Videos with Task Relevance & Cross-Modal Saliency</title>
 	<meta property="og:image" content="resources/teaser.png" />
 	<!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-	<meta property="og:title" content="TL;DW? Summarizing Instructional Videos with Task Relevance \& Cross-Modal Saliency" />
+	<meta property="og:title"
+		content="TL;DW? Summarizing Instructional Videos with Task Relevance \& Cross-Modal Saliency" />
 	<meta property="og:description"
 		content="We introduce an approach for summarizing instrucitonal videos without relying on manual annotations." />
 
@@ -161,7 +162,8 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">TL;DW? Summarizing Instructional Videos with Task Relevance & Cross-Modal Saliency</span>
+		<span style="font-size:36px">TL;DW? Summarizing Instructional Videos with Task Relevance & Cross-Modal
+			Saliency</span>
 		<br><br>
 		<span style="font-size:30px">ECCV 2022</span>
 		<br><br>
@@ -178,7 +180,7 @@
 						<span style="font-size:24px"><a href="">Michael
 								Rubinstein</a></span>&nbsp;&nbsp;&nbsp; <br>
 						<span style="font-size:24px"><a href="https://people.eecs.berkeley.edu/~trevor/">Trevor
-								Darrell</a></span>&nbsp;&nbsp;&nbsp;		
+								Darrell</a></span>&nbsp;&nbsp;&nbsp;
 						<span style="font-size:24px"><a href="https://anna-rohrbach.net/">Anna
 								Rohrbach</a></span>&nbsp;&nbsp;&nbsp;
 						<span style="font-size:24px"><a href="">Cordelia
@@ -194,7 +196,7 @@
 							<span style="font-size:20px">Google Research</span>&nbsp;&nbsp;&nbsp;
 							<span style="font-size:20px">Brown University</span>&nbsp;&nbsp;&nbsp;
 						</center>
-					</td>				
+					</td>
 				</tr>
 
 			</table>
@@ -212,7 +214,8 @@
 							</center>
 					</td>
 					<td align=center width=100px> <span style="font-size:15pt">
-							<center><a href='https://github.com/medhini/Instructional-Video-Summarization'>[GitHub]</a></center>
+							<center><a href='https://github.com/medhini/Instructional-Video-Summarization'>[GitHub]</a>
+							</center>
 					</td>
 				</tr>
 			</table>
@@ -225,7 +228,7 @@
 			<tr>
 				<td align=center width=850px>
 					<center>
-						<img class="round" style="width:650px" align="middle" src="resources/overview.png"/>
+						<img class="round" style="width:650px" align="middle" src="resources/overview.png" />
 					</center>
 				</td>
 			</tr>
@@ -233,7 +236,11 @@
 		<table align=center width=850px>
 			<tr>
 				<td>
-					<b>Summarizing Instructional Videos</b>Too Long; Didn't Watch? (TL;DW?) We introduce an approach for creating short visual summaries comprising important steps that are most relevant to the task, as well as salient in the video, i.e.\ referenced in the speech. For example, given a long video on <i>``How to make a veggie burger''</i> as shown above, the summary comprises key steps such as <i>fry ingredients, blend beans</i>, and <i>fry patty</i>}
+					<b>Summarizing Instructional Videos</b>Too Long; Didn't Watch? (TL;DW?) We introduce an approach for
+					creating short visual summaries comprising important steps that are most relevant to the task, as
+					well as salient in the video, i.e.\ referenced in the speech. For example, given a long video on
+					<i>``How to make a veggie burger''</i> as shown above, the summary comprises key steps such as
+					<i>fry ingredients, blend beans</i>, and <i>fry patty</i>}
 				</td>
 			</tr>
 		</table>
@@ -241,74 +248,95 @@
 
 	<hr>
 	<center>
-	<table align=center width=850px>
-		<center>
-			<h1>Abstract</h1>
-		</center>
-		<tr>
-			<td>
-				YouTube users looking for instructions for a specific task may spend a long time browsing content trying to find the right video that matches their needs. Creating a visual summary (abridged version of a video) provides viewers with a quick overview and massively reduces search time. In this work, we focus on summarizing <i>instructional</i> videos, an under-explored area of video summarization. In comparison to generic videos, instructional videos can be parsed into semantically meaningful segments that correspond to important steps of the demonstrated task. Existing video summarization datasets rely on manual frame-level annotations, making them subjective and limited in size. To overcome this, we first automatically generate <i>pseudo summaries</i> for a corpus of instructional videos by exploiting two key assumptions: (i) relevant steps are likely to appear in multiple videos of the same task (<i>Task Relevance</i>), and (ii) they are more likely to be described by the demonstrator verbally (<i>Cross-Modal Saliency</i>). We propose an instructional video summarization network that combines a context-aware temporal video encoder and a segment scoring transformer. Using pseudo summaries as weak supervision, our network constructs a visual summary for an instructional video given only video and transcribed speech. To evaluate our model, we collect a high-quality test set, <i>WikiHow Summaries</i>, by scraping WikiHow articles that contain video demonstrations and visual depictions of steps allowing us to obtain the ground-truth summaries. We outperform several baselines and a state-of-the-art video summarization model on this new benchmark.
-			</td>
-		</tr>
-	</table>
+		<table align=center width=850px>
+			<center>
+				<h1>Abstract</h1>
+			</center>
+			<tr>
+				<td>
+					YouTube users looking for instructions for a specific task may spend a long time browsing content
+					trying to find the right video that matches their needs. Creating a visual summary (abridged version
+					of a video) provides viewers with a quick overview and massively reduces search time. In this work,
+					we focus on summarizing <i>instructional</i> videos, an under-explored area of video summarization.
+					In comparison to generic videos, instructional videos can be parsed into semantically meaningful
+					segments that correspond to important steps of the demonstrated task. Existing video summarization
+					datasets rely on manual frame-level annotations, making them subjective and limited in size. To
+					overcome this, we first automatically generate <i>pseudo summaries</i> for a corpus of instructional
+					videos by exploiting two key assumptions: (i) relevant steps are likely to appear in multiple videos
+					of the same task (<i>Task Relevance</i>), and (ii) they are more likely to be described by the
+					demonstrator verbally (<i>Cross-Modal Saliency</i>). We propose an instructional video summarization
+					network that combines a context-aware temporal video encoder and a segment scoring transformer.
+					Using pseudo summaries as weak supervision, our network constructs a visual summary for an
+					instructional video given only video and transcribed speech. To evaluate our model, we collect a
+					high-quality test set, <i>WikiHow Summaries</i>, by scraping WikiHow articles that contain video
+					demonstrations and visual depictions of steps allowing us to obtain the ground-truth summaries. We
+					outperform several baselines and a state-of-the-art video summarization model on this new benchmark.
+				</td>
+			</tr>
+		</table>
 	</center>
 	<br>
 
 	<hr>
 	<center>
-	<table align=center width=850px>
-		<center>
-			<h1>Datasets</h1>
-			<tr>
-				<td align=center width=850px>
-					<center>
-						<img class="round" style="width:850px" align="middle" src="resources/dataset.png"/>
-					</center>
-				</td>
-				
-			</tr>
-			<tr>
-				<td>
-				 <b>Pseudo Summaries.</b> 
-				</td>
-			</tr>
-			<tr>
-				<td align=center width=850px>
-					<center>
-						<img class="round" style="width:850px" align="middle" src="resources/wikihowsummaries.png"/>
-					</center>
-				</td>
-			</tr>
-			<tr>
-				<td>
-				 <b>WikiHow Summaries.</b> 
-				</td>
-			</tr>
+		<table align=center width=850px>
+			<center>
+				<h1>Datasets</h1>
+				<tr>
+					<td align=center width=850px>
+						<center>
+							<img class="round" style="width:850px" align="middle" src="resources/dataset.png" />
+						</center>
+					</td>
 
-		</center>
-	</table>
+				</tr>
+				<tr>
+					<td>
+						<b>Pseudo Summaries.</b>
+					</td>
+				</tr>
+				<tr>
+					<td align=center width=850px>
+						<center>
+							<img class="round" style="width:850px" align="middle"
+								src="resources/wikihowsummaries.png" />
+						</center>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>WikiHow Summaries.</b>
+					</td>
+				</tr>
+
+			</center>
+		</table>
 	</center>
 
 	<hr>
 	<center>
-	<table align=center width=850px>
-		<center>
-			<h1>Method</h1>
+		<table align=center width=850px>
+			<center>
+				<h1>Method</h1>
+				<tr>
+					<td align=center width=850px>
+						<center>
+							<img class="round" style="width:850px" align="middle" src="resources/approach.png" />
+						</center>
+					</td>
+				</tr>
+			</center>
+
 			<tr>
-				<td align=center width=850px>
-					<center>
-						<img class="round" style="width:850px" align="middle" src="resources/approach.png"/>
-					</center>
+				<td>
+					<b>Overview of Instructional Video Summarization.</b> We first obtain pseudo summaries for a large
+					collection of videos using our weakly supervised algorithm. Next, using the pseudo summaries as
+					weak-supervision, we train our Instructional Video Summarizer (IV-Sum). It takes an input video
+					along with the corresponding ASR transcript and learns to assign importance scores to each segment
+					in the video. The final summary is a compilation of the high scoring video segments.
 				</td>
 			</tr>
-		</center>
-
-		<tr>
-			<td>
-				 <b>Overview of Instructional Video Summarization.</b> We first obtain pseudo summaries for a large collection of videos using our weakly supervised algorithm. Next, using the pseudo summaries as weak-supervision, we train our Instructional Video Summarizer (IV-Sum). It takes an input video along with the corresponding ASR transcript and learns to assign importance scores to each segment in the video. The final summary is a compilation of the high scoring video segments. 
-			</td>
-		</tr>
-	</table>
+		</table>
 	</center>
 	<br>
 
@@ -332,8 +360,10 @@
 		</center>
 		<tr>
 			<td><a href=""><img class="layered-paper-big" style="height:175px" src="resources/paper.png" /></a></td>
-			<td><span style="font-size:12pt">M. Narasimhan, A. Nagrani, C. Sun, M. Rubinstein, T. Darrell, A. Rohrbach, C. Schmid.</span><br>
-				<b><span style="font-size:12pt">TL;DW? Summarizing Instructional Videos with<br>Task Relevance & Cross-Modal Saliency</b></span><br>
+			<td><span style="font-size:12pt">M. Narasimhan, A. Nagrani, C. Sun, M. Rubinstein, T. Darrell, A. Rohrbach,
+					C. Schmid.</span><br>
+				<b><span style="font-size:12pt">TL;DW? Summarizing Instructional Videos with<br>Task Relevance &
+						Cross-Modal Saliency</b></span><br>
 				<span style="font-size:12pt">ECCV, 2022.</span>
 			</td>
 			</td>
@@ -345,7 +375,7 @@
 			<td><span style="font-size:14pt">
 					<center>
 						<a href="hhttps://arxiv.org/pdf/2208.06773.pdf">[Paper]</a> |
-						<a href="">[Bibtex]</a>
+						<a href="https://link.springer.com/chapter/10.1007/978-3-031-19830-4_31#citeas">[Bibtex]</a>
 					</center>
 			</td>
 		</tr>
@@ -361,7 +391,9 @@
 				<left>
 					<center>
 						<h1>Acknowledgements</h1>
-					</center> We thank Daniel Fried and Bryan Seybold for valuable discussions and feedback on the draft. This work was supported in part by DoD including DARPA's LwLL, PTG and/or SemaFor programs, as well as BAIR's industrial alliance programs. 
+					</center> We thank Daniel Fried and Bryan Seybold for valuable discussions and feedback on the
+					draft. This work was supported in part by DoD including DARPA's LwLL, PTG and/or SemaFor programs,
+					as well as BAIR's industrial alliance programs.
 				</left>
 			</td>
 		</tr>
@@ -369,16 +401,16 @@
 
 	<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
 		<tr>
-		  <td>
-			<br>
-			<p align="right">
-			  <font size="2">
-				<a href="https://github.com/richzhang/webpage-template">Template cloned from here!</a>
-			  </font>
-			</p>
-		  </td>
+			<td>
+				<br>
+				<p align="right">
+					<font size="2">
+						<a href="https://github.com/richzhang/webpage-template">Template cloned from here!</a>
+					</font>
+				</p>
+			</td>
 		</tr>
-	  </table>
+	</table>
 
 
 	<br>
